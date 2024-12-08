@@ -278,14 +278,6 @@ body {
   }
 }
 
-.sec-gallery {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: #212325;
-}
 .search-container {
   display: flex;
   /* position: absolute; */
@@ -428,6 +420,14 @@ body {
   }
 }
 
+.sec-gallery {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #212325;
+}
 .gallery h3 {
   text-align: center;
   font-size: 22px;
@@ -1066,7 +1066,6 @@ body {
   font-size: 20px;
   color: #fff;
   transition: color 0.3s ease;
-  border: 1px solid white;
   border-radius: 50px;
   padding: 5px 8px;
   justify-content: center;
@@ -1217,8 +1216,8 @@ body {
 }
 .content-card {
   display: flex;
-  width: 100%;
-  /* width: 1200px; */
+ 
+  width: 1200px;
   height: 550px;
   padding: 10px;
   flex-direction: column;
@@ -1362,7 +1361,7 @@ body {
 .slide1 {
   flex: 0 0 calc(10% - 50px);
   display: flex;
-  width: 578px;
+  width: 1000px;
   height: 114px;
   padding: 10px;
   justify-content: left;
@@ -1556,3 +1555,18 @@ body {
       display: none;
       padding: 20px;
     }
+    .typewriter {
+      font-size: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid rgb(255, 255, 255);
+      width: fit-content;
+      color: #ffffff;
+      animation: blink 0.7s step-end infinite; /* Kursor berkedip */
+  }
+
+  @keyframes blink {
+      50% {
+          border-color: transparent;
+      }
+  }
